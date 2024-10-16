@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choi's Task Manager</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="project02.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 style="text-align: center;">Sangoh Choi's Task Manager</h1>
+        <br>
+        <div class="row">
+            <div class="col-sm-4">
+                <h4 style="text-align: center;">Helpful Links to Task Management</h4>
+                <ul class="nav-item">
+                    <li> <a class="nav-link active" href="https://www.youtube.com/watch?v=iONDebHX9qk" target="_blank" style="background-color: black; color:white">How to manage Time</a></li>
+                    <li> <a class="nav-link active" href="https://www.youtube.com/watch?v=ODXV-fb_c-I" target="_blank" style="background-color: rgb(20, 9, 107); color:white">How to Organize a calendar</a></li>
+                    <li> <a class="nav-link active" href="https://sang5ch.github.io/3rdMilestone/choiAssignment03.html"  target="_blank" style="background-color: rgb(160, 11, 11); color:white">My Assignment 03</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-8">
+                <h2>Task Manager</h2>
+                <form id="taskForm">
+                    <div class="form-group">
+                        <label for="taskTitle">Task Title</label>
+                        <input type="text" class="form-control" id="taskTitle" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="taskPriority">Task Priority</label>
+                        <select class="form-control" id="taskPriority">
+                            <option style = "color: green">Low</option>
+                            <option style = "color: orange">Medium</option>
+                            <option style = "color: red">High</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Task Status</label>
+                        <div>
+                            <label style="color:orange"><input type="radio" name="status" value="Pending" checked> Pending</label>
+                            <label style="color:green"><input type="radio" name="status" value="Completed"> Completed</label>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Add Task</button>
+                </form>
+                <ul id="taskList" class="list-group mt-3"></ul>
+            </div>
+        </div>
+    </div>
+
+    <div style="margin-top: 20px; text-align: center;">
+
+        <div class="container mt-3" style="background-color: lightcyan;">
+            <h2>Famous Quotes</h2>
+            <div class="media border p-3">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Golda_Meir_%281964%29_cropped.jpg/220px-Golda_Meir_%281964%29_cropped.jpg" alt="Golda Meir" class="mr-3 mt-3 rounded-circle" style="width:60px;">
+              <div class="media-body">
+                <h4>Golda Mier <small><i>Fourth Prime Minster of Israel</i></small></h4>
+                <p>I must govern the clock, not be governed by it.</p>      
+              </div>
+            </div>
+
+            <div class="media border p-3">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Brian_Tracy_%284005302419%29_%28cropped%29.jpg/220px-Brian_Tracy_%284005302419%29_%28cropped%29.jpg" alt="Brian Tracy" class="mr-3 mt-3 rounded-circle" style="width:60px;">
+                <div class="media-body">
+                  <h4>Brian Tracy <small><i>Author of Earn What you're Really Worth</i></small></h4>
+                  <p>Your greatest asset is your earning ability. Your greatest recource is your time.</p>      
+                </div>
+            </div>
+
+            <div class="media border p-3">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Oprah_Winfrey_2010.jpg/170px-Oprah_Winfrey_2010.jpg" alt="Oprah Winfrey" class="mr-3 mt-3 rounded-circle" style="width:60px;">
+                <div class="media-body">
+                  <h4>Oprah Winfrey <small><i>Talk Show Host, TV Producer, Author, and Media Proprietor</i></small></h4>
+                  <p>You can have it all. Just not all at once.</p>      
+                </div>
+            </div>
+
+          </div>
+
+      </div>
+
+    <script src="project02.js"></script>
+</body>
+</html>
